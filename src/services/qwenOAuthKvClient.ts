@@ -1,5 +1,5 @@
-import type { QwenCredentials, QwenOAuth2Client, TokenRefreshResponse } from '../types/qwen';
-import { KV_CREDENTIALS_KEY, isTokenValid, normalizeQwenBaseUrl } from '../types/common';
+import type { QwenCredentials } from '../types/qwen';
+import { KV_CREDENTIALS_KEY, isTokenValid } from '../types/common';
 import { QWEN_CONFIG } from '../config/constants';
 
 function toForm(data: Record<string, string>) {

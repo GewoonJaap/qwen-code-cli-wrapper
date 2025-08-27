@@ -1,11 +1,10 @@
-import type { OpenAIMessage, ChatCompletionsBody, UpstreamChatCreate, OpenAIContentItem } from '../types/openai';
-import { validateChatBody } from '../config/validation';
+import type { ChatCompletionsBody, UpstreamChatCreate, OpenAIContentItem } from '../types/openai';
 
 function normalizeContent(content: string | OpenAIContentItem[]): string {
 	if (typeof content === 'string') {
 		return content;
 	}
-	
+
 	// For array content, extract text from all text items
 	return content
 		.filter((item): item is Extract<OpenAIContentItem, { type: 'text' }> => item.type === 'text')
