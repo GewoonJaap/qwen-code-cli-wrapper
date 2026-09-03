@@ -26,10 +26,10 @@
 		"eslint": "^9.33.0",
 		"prettier": "^3.6.2",
 		"typescript": "^5.5.2",
-		"vitest": "~3.2.0",
+		"vitest": "~3.2.6",
 		"wrangler": "4"
 	},
 	"dependencies": {
-		"hono": "^4.9.2"
+		"hono": "^4.12.34"
 	}
 }
